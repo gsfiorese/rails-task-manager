@@ -1,0 +1,27 @@
+<h1 class="edit-title">Edit Task</h1>
+
+<div class="edit-container">
+  <%= form_with(model: @task, local: true) do |form| %>
+    <div class="edit-form-field">
+      <%= form.label :title %>
+      <%= form.text_field :title, class: 'form-input' %>
+    </div>
+
+    <div class="edit-form-field">
+      <%= form.label :details %>
+      <%= form.text_area :details, class: 'form-input' %>
+    </div>
+
+    <div class="edit-form-field">
+      <%= form.label :completed do %>
+        <%= form.check_box :completed %>
+        Completed
+      <% end %>
+    </div>
+
+    <div class="edit-button-container">
+      <%= form.submit 'Update Task', class: 'edit-submit-button' %>
+      <%= link_to 'Back to Task List', tasks_path, class: 'back-button' %>
+    </div>
+  <% end %>
+</div>

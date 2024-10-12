@@ -1,0 +1,13 @@
+<h1>User Task List</h1>
+<%= link_to 'New Task', new_task_path, class: 'button' %>
+
+<ul class="task-list">
+  <% @tasks.each do |task| %>
+    <div class="task-item">
+      <h2><%= link_to task.title, task_path(task) %></h2>
+      <p><%= task.details %></p>
+      <p>Status: <%= task.completed ? '✅ Completed' : '❌ Not Completed' %></p>
+      <%= link_to '<i class="fas fa-edit edit-icon"></i>Edit Task'.html_safe, edit_task_path(task), class: 'edit-button' %>
+    </div>
+  <% end %>
+</ul>

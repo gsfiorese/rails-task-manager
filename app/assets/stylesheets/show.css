@@ -1,0 +1,52 @@
+/* Show Page Styles */
+.show-container {
+  max-width: 600px; /* Limit the width of the show content */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background-color: #fff; /* White background for the show page */
+  border: 1px solid #ddd; /* Border for the show page */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Task Title Styles */
+.task-title {
+  font-size: 24px; /* Larger font size for title */
+  margin-bottom: 10px; /* Space below title */
+  color: #333; /* Darker color for better readability */
+}
+
+/* Task Details Styles */
+.task-details {
+  margin-bottom: 20px; /* Space below details */
+  line-height: 1.5; /* Improve readability */
+  color: #555; /* Slightly lighter color for details */
+}
+
+/* Status Styles */
+.task-status {
+  font-weight: bold; /* Bold for status */
+  font-size: 18px; /* Larger font size for status */
+  margin-bottom: 20px; /* Space below status */
+}
+
+/* Button Container Styles */
+.button-container {
+  margin-top: 20px; /* Space above the button container */
+}
+
+/* Button Styles */
+.show-button {
+  display: inline-block; /* Display as inline-block */
+  margin-top: 10px; /* Space above the button */
+  padding: 10px 15px; /* Padding for button */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.show-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

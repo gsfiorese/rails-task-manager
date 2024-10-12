@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title Styles */
+h1 {
+  text-align: center; /* Center the title */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 10px; /* Add space below the title */
+  padding: 10px; /* Add padding for visual separation */
+  border-bottom: 2px solid #007bff; /* Underline the title */
+}
+
+/* Button Styles */
+.button {
+  display: block; /* Make the button a block element */
+  width: 150px; /* Fixed width for consistency */
+  padding: 10px 15px;
+  margin: 20px auto; /* Center the button */
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center; /* Center text in the button */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List Styles */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto; /* Center the list */
+}
+
+/* Task Item Styles */
+.task-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: box-shadow 0.3s ease;
+  position: relative; /* For positioning the edit button */
+}
+
+/* Different background colors for tasks */
+.task-item:nth-child(odd) {
+  background-color: #e9f7fe; /* Light blue */
+}
+
+.task-item:nth-child(even) {
+  background-color: #fef9e7; /* Light yellow */
+}
+
+.task-item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit Button Styles */
+.edit-button {
+  position: absolute; /* Position the button to the right */
+  top: 15px; /* Adjust based on padding */
+  right: 15px; /* Align to the right */
+  background-color: #28a745; /* Green for Edit button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px 10px; /* Padding for the button */
+}
+
+.edit-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Edit Icon Styles */
+.edit-icon {
+  margin-right: 5px; /* Space between icon and text */
+}
